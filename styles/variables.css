@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Integral CF";
+  src: url(styles.css/fonts/Fontspring-DEMO-integralcf-bold.otf);
+}
+
+:root {
+  --hdr-section-clr: #f2f0f1; /*header section background color*/
+  --ftr-imgs-bg-clr: #f0f0f0; /*footer and images group background color*/
+  --img-bg-clr: #f0eeed; /*every image background color*/
+  --hdr-bg-clr: #000000; /*every header background color*/
+  --fnt-family-integral: "Integral CF", sans-serif;
+  --fnt-family-satoshi: "Satoshi", sans-serif;
+  --fnt-black: black;
+}

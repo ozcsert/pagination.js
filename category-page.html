@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="category-page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <title>Shop.Co</title>
+  </head>
+  <body>
+    <main>
+      <section class="category-page">
+        <div class="category-page-title">
+          <h1>Casual</h1>
+          <div class="page-title-right">
+            <span>Showing 1-10 of 100 Products</span>
+            <div class="title-sort">
+              <span>Sort by:</span>
+              <select id="sort-options">
+                <option value="popular">Most Popular</option>
+                <option value="low-to-high">Price: Low to High</option>
+                <option value="high-to-low">Price: High to Low</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="products">
+          <div class="product"></div>
+        </div>
+        <div class="pagination">
+          <button class="previous">
+            <img src="images/category/arrow-left.svg" />Previous
+          </button>
+          <div class="page-numbers"></div>
+          <button class="next">
+            Next<img src="images/category/arrow-right.svg" />
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="category-page.js"></script>
+</html>

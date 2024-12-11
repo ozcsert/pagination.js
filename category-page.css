@@ -1,0 +1,246 @@
+@import url("style.css");
+
+.category-page {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  max-width: 925px;
+  width: 100%;
+  gap: 30px;
+  font-family: var(--fnt-family-satoshi);
+  margin: 0 auto;
+}
+
+.category-page h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.category-page-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.page-title-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.page-title-right,
+.title-sort {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#sort-options {
+  border: none;
+  font-size: 16px;
+}
+
+.category-page .products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  max-width: 925px;
+}
+
+.category-page .product {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  max-width: 295px;
+  cursor: pointer;
+}
+
+.category-page .image-container {
+  width: 295px;
+  height: 298px;
+  padding: 45px;
+  background-color: #f0eeed;
+  border-radius: 20px;
+}
+
+.category-page-image {
+  transition: transform 0.5s;
+  cursor: pointer;
+  mix-blend-mode: multiply;
+  width: 100%;
+  height: 100%;
+}
+
+.category-page-image:hover {
+  transform: scale(1.1);
+}
+
+.category-page h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+.nt-stars-and-puan {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.product .stars {
+  margin-right: 13px;
+  display: flex;
+}
+
+.product .point-stars {
+  font-size: 16px;
+  line-height: 18.9px;
+  font-weight: 400;
+}
+
+.product .star {
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  margin-right: 5px;
+}
+
+.star.full {
+  background-color: #ffc633;
+}
+
+.star.half {
+  background: linear-gradient(to right, #ffc633 50%, #dad0cc 50%);
+}
+.star.empty {
+  background-color: #dad0cc;
+}
+
+.category-page .original-price {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 216px;
+  width: 100%;
+  max-width: 925px;
+}
+
+.page-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.category-page button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  width: 110px;
+  height: 36px;
+  border-radius: 8px;
+  border-color: rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  cursor: pointer;
+  padding: 8px 14px;
+}
+.page-numbers span {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0 5px;
+}
+
+.page-numbers button.current {
+  background-color: grey; /* Set the background color for the current page */
+  color: white; /* Text color for better visibility */
+  cursor: pointer;
+}
+
+.page-numbers button:hover {
+  background-color: lightgrey; /* Change hover color to light grey */
+}
+
+@media screen and (max-width: 1150px) {
+  .category-page {
+    margin: 10px auto 80px auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .category-page h1 {
+    font-size: 28px;
+  }
+
+  .category-page .products {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+
+  .pagination {
+    gap: 100px;
+  }
+
+  .category-page button {
+    width: 90px;
+    height: 32px;
+  }
+
+  .page-numbers {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .category-page {
+    margin: 10px auto 50px auto;
+  }
+
+  .category-page h1 {
+    font-size: 24px;
+  }
+
+  .category-page .products {
+    grid-template-columns: 1fr;
+  }
+
+  .pagination {
+    gap: 5px;
+    flex-direction: column;
+  }
+}
